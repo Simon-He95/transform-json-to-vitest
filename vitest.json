@@ -1,0 +1,56 @@
+{
+  "name": "vitest",
+  "dependency": "import { describe, it, expect, test } from 'vitest'",
+  "describe": [
+    {
+      "name": "hi",
+      "type": "async",
+      "command": "skip",
+      "it": [
+        {
+          "expression": "const a = 2",
+          "name": "should works",
+          "expect": "a",
+          "to": "toEqual",
+          "result": "2"
+        },
+        {
+          "expression": "const a = 2",
+          "name": "should works",
+          "expect": "a",
+          "to": "toMatchInlineSnapshot",
+          "result": ""
+        }
+      ],
+      "test": [
+        {
+          "expression": "const a = 2",
+          "name": "should works",
+          "expect": "a",
+          "to": "toEqual",
+          "result": "2"
+        }
+      ]
+    },
+    {
+      "name": "hi",
+      "type": "async",
+      "it": [
+        {
+          "expression": "const a = 2",
+          "name": "should works",
+          "expect": "a",
+          "to": "toEqual",
+          "result": "2"
+        },
+        {
+          "expression": "const a = 2",
+          "name": "should works",
+          "expect": "a",
+          "to": "toMatchInlineSnapshot",
+          "result": ""
+        }
+      ]
+    }
+  ]
+}
