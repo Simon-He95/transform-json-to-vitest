@@ -31,8 +31,8 @@ export async function transformJsonToVitest() {
       dep++
       return item?.[type]?.map((it) => {
         const _it = `${generateSpace()}${type}${it?.command ? `.${it?.command}` : ''}('${it.name}', ${it?.type === 'async' ? 'async ' : ''}() => {
-  ${callback ? callback?.(it) : `${generateSpace()}${generateSpace()}${it?.expression}\n` + `${generateSpace()}${generateSpace()}expect(${it.expect}).${it.to}(${it?.result});`}
-  ${generateSpace()}})`
+${callback ? callback?.(it) : `${generateSpace()}${generateSpace()}${it?.expression}\n` + `${generateSpace()}${generateSpace()}expect(${it.expect}).${it.to}(${it?.result});`}
+${generateSpace()}})`
         return _it
       }).join('\n') || ''
     }
